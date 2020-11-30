@@ -108,14 +108,21 @@ p {
 
 /* Герой */
 .overlay {
-  min-width: 1600px;
-  height: 600px;
+  max-width: 1600px;
+  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
-  background-image: url(../img/bg.jpg);
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover; */
 }
 .hero {
-  /* background: var(--background); */
   text-align: center;
   margin: 0;
   padding-bottom: 200px;
