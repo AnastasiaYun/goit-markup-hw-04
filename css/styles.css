@@ -107,8 +107,15 @@ p {
 }
 
 /* Герой */
+.overlay {
+  min-width: 1600px;
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: url(../img/bg.jpg);
+}
 .hero {
-  background: var(--background);
+  /* background: var(--background); */
   text-align: center;
   margin: 0;
   padding-bottom: 200px;
