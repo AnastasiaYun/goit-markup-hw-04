@@ -203,6 +203,27 @@ section {
   display: flex;
   justify-content: space-between;
 }
+.features-icons::before {
+  display: block;
+  content: '';
+  height: 120px;
+  background-color: var(--bacground-secondary);
+  background-repeat: no-repeat;
+  background-size: initial;
+  background-position: center;
+}
+.icon-antenna::before{
+  background-image: url(../img/antenna\ 1.png);
+}
+.icon-clock::before {
+  background-image: url(../img/clock\ 1.png);
+}
+.icon-diagram::before {
+  background-image: url(../img/diagram\ 1.png);
+}
+.icon-astronaut::before{
+  background-image: url(../img/astronaut\ 1.png);
+}
 .section-title-features {
   /* width: 270px; */
   color: var(--primary-text-color);
@@ -210,6 +231,7 @@ section {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
+  padding-top: 30px ;
   padding-bottom: 10px;
   margin-top: 0;
 }
