@@ -6,6 +6,7 @@
   --background: #2f303a;
   --button-bgr: #f5f4fa;
   --bacground-secondary: #f5f4fa;
+  --icons: #afb1b8;
 }
 
 body {
@@ -120,7 +121,7 @@ p {
     url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover; */
+  background-size: cover;
 }
 .hero {
   text-align: center;
@@ -205,14 +206,14 @@ section {
 }
 .features-icons::before {
   display: block;
-  content: '';
+  content: "";
   height: 120px;
   background-color: var(--bacground-secondary);
   background-repeat: no-repeat;
   background-size: initial;
   background-position: center;
 }
-.icon-antenna::before{
+.icon-antenna::before {
   background-image: url(../img/antenna\ 1.png);
 }
 .icon-clock::before {
@@ -221,7 +222,7 @@ section {
 .icon-diagram::before {
   background-image: url(../img/diagram\ 1.png);
 }
-.icon-astronaut::before{
+.icon-astronaut::before {
   background-image: url(../img/astronaut\ 1.png);
 }
 .section-title-features {
@@ -231,7 +232,7 @@ section {
   font-size: 14px;
   line-height: 1.142;
   text-transform: uppercase;
-  padding-top: 30px ;
+  padding-top: 30px;
   padding-bottom: 10px;
   margin-top: 0;
 }
@@ -335,6 +336,42 @@ section {
   background-position: center;
   background-size: 20px;
 }
+/* Постоянные клиенты */
+.clients {
+  display: inline-flex;
+}
+.actions {
+  display: grid;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-right: 30px;
+}
+.clients-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.clients-icons-logoone,
+.clients-icons-logotwo,
+.clients-icons-logothree,
+.clients-icons-logofour,
+.clients-icons-logofive,
+.clients-icons-logosix {
+  fill: var(--icons);
+}
+.clients-icons-logoone :hover,
+.clients-icons-logotwo :hover,
+.clients-icons-logothree :hover,
+.clients-icons-logofour :hover,
+.clients-icons-logofive :hover,
+.clients-icons-logosix :hover,
+.actions :hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
 /* подвал */
 .footer {
   background: var(--background);
@@ -404,6 +441,4 @@ section {
 }
 .no-padding-bottom {
   padding-bottom: 0;
-  background-attachment: fixed;
 }
-
