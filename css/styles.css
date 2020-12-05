@@ -235,6 +235,7 @@ section {
   padding: 0;
   margin: 0;
 }
+
 /* Чем мы занимаемся */
 .section-title {
   font-weight: 700;
@@ -281,62 +282,37 @@ section {
   padding-top: 10px;
   padding-bottom: 16px;
 }
-.sectin-names-shadow {
+.section-names-shadow {
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.names-social-icons-inst {
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  background-image: url(../img/instagram\ 2.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
+.decoration-no {
+  text-decoration: none;
 }
-.names-social-icons-twiter {
-  display: inline-block;
-  height: 45px;
-  width: 45px;
-  background-image: url(../img/twitter\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
+.link-social-icons:hover {
+  background-color: var(--accent-color);
+  fill: var(--white-color);
 }
-.names-social-icons-faceb {
-  display: inline-block;
-  height: 45px;
+.link-social-icons {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 45px;
-  background-image: url(../img/facebook\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
-}
-.names-social-icons-in {
-  display: inline-block;
   height: 45px;
-  width: 45px;
-  background-image: url(../img/linkedin\ 1.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 20px;
+  border-radius: 50%;
+  background-color: var(--white-color);
+  fill: var(--icons);
 }
 /* Постоянные клиенты */
 .clients {
-  display: inline-flex;
+  display: flex;
 }
-/* .actions {
-  display: grid;
-  width: 170px;
-  height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
-  border-radius: 4px;
-  margin-right: 30px;
-} */
 .clients-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 170px;
   height: 90px;
   border: 1px solid #afb1b8;
@@ -345,23 +321,15 @@ section {
   background: transparent;
   cursor: pointer;
 }
-.clients-icons-logoone,
-.clients-icons-logotwo,
-.clients-icons-logothree,
-.clients-icons-logofour,
-.clients-icons-logofive,
-.clients-icons-logosix {
+.clients-icons {
   fill: var(--icons);
 }
-.clients-icons-logoone:hover,
-.clients-icons-logotwo:hover,
-.clients-icons-logothree:hover,
-.clients-icons-logofour:hover,
-.clients-icons-logofive:hover,
-.clients-icons-logosix:hover {
+.clients-button:hover .clients-icons,
+.clients-button :focus {
   fill: var(--accent-color);
 }
-.clients-button:hover {
+.clients-button:hover,
+.clients-button:focus {
   border-color: var(--accent-color);
 }
 /* подвал */
