@@ -101,11 +101,10 @@ p {
   align-items: center;
 }
 .link-icons-header:hover .icon-contacts-header {
-  fill: red;
+  fill: var(--accent-color);
 }
-.link-icons-header:hover .icon-contacts-header {
-  background: transparent;
-  color: red;
+.link-icons-header:hover {
+  color: var(--accent-color);
 }
 .icon-contacts-header {
   fill: var(--title-text-color);
