@@ -100,33 +100,21 @@ p {
   display: flex;
   align-items: center;
 }
-.link-icons-header:hover {
+.link-icons-header:hover .icon-contacts-header {
   fill: red;
 }
-.link-icons-header:hover .items-contacts-header a {
+.link-icons-header:hover .icon-contacts-header {
+  background: transparent;
   color: red;
 }
-/* .header-mail-tel *:hover,
-.header-mail-tel *:focus {
-  color: var(--accent-color);
-} */
-/* .links-icons-header:hover,
-.icon-contacts-header:hover {
-  fill: red;
-} */
 .icon-contacts-header {
   fill: var(--title-text-color);
+  margin-right: 10px;
 }
 .link-icons-header {
-  text-decoration: none;
-}
-.items-contacts-header {
-  padding-left: 10px;
-  padding-right: 30px;
   color: var(--title-text-color);
   text-decoration: none;
 }
-
 /* Герой */
 .overlay {
   max-width: 1600px;
