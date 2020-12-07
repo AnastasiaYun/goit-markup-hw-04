@@ -78,7 +78,6 @@ p {
 }
 .site-nav .item {
   list-style: none;
-  display: block;
   margin-left: 90px;
 }
 .site-nav :hover,
@@ -89,36 +88,43 @@ p {
   color: var(--accent-color);
 }
 .header-mail-tel {
-  display: flex;
+  align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.142;
-  letter-spacing: 0.02em;
   margin-left: auto;
-}
-.header-mail-tel a {
-  text-decoration: none;
-  color: var(--title-text-color);
+  list-style: none;
 }
 .header-mail-tel .item + .item {
   padding-left: 50px;
 }
-.header-mail-tel *:hover,
-.header-mail-tel *:focus {
-  background: transparent;
-  color: var(--accent-color);
-}
-.icon-contacts-header {
+.header-center {
   display: flex;
   align-items: center;
+}
+.link-icons-header:hover {
+  fill: red;
+}
+.link-icons-header:hover .items-contacts-header a {
+  color: red;
+}
+/* .header-mail-tel *:hover,
+.header-mail-tel *:focus {
+  color: var(--accent-color);
+} */
+/* .links-icons-header:hover,
+.icon-contacts-header:hover {
+  fill: red;
+} */
+.icon-contacts-header {
   fill: var(--title-text-color);
 }
-.icon-contacts-header:hover {
-  fill: var(--accent-color);
+.link-icons-header {
+  text-decoration: none;
 }
 .items-contacts-header {
   padding-left: 10px;
   padding-right: 30px;
+  color: var(--title-text-color);
+  text-decoration: none;
 }
 
 /* Герой */
@@ -339,7 +345,7 @@ section {
   fill: var(--icons);
 }
 .clients-button:hover .clients-icons,
-.clients-button :focus {
+.clients-button:focus {
   fill: var(--accent-color);
 }
 .clients-button:hover,
